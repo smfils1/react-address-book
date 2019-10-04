@@ -9,15 +9,8 @@ const ContactList = ({ contacts }) => {
         contacts.map(contact => (
             <Contact {...contact} width="25rem" key={v4()} />
         ));
-    console.log(createContacts());
 
-    return (
-        <Container>
-            <div className="d-flex flex-wrap align-items-between justify-content-around">
-                {createContacts()}
-            </div>
-        </Container>
-    );
+    return <>{createContacts()}</>;
 };
 
 export default ContactList;
