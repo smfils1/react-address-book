@@ -52,8 +52,8 @@ class AddressBook extends Component {
             <Container>
                 <SearchBox width="25rem" className="mx-auto my-5"/>
 
-                <div className="d-flex flex-wrap  justify-content-around">
-                    <ContactList contacts={this.state.contacts}/>
+                <div>
+                    <ContactList contacts={this.state.contacts} className="d-flex flex-wrap  justify-content-around mb-5"/>
                 </div>
             </Container>
             

@@ -1,10 +1,10 @@
 import React from 'react'
+import Header from '../Header/Header'
+
 
 const AddContactPage = () => 
     (
-        <div>
-           <h1>Add Contact</h1> 
-        </div>
+           <Header>Add Contact</Header> 
     )
 
 

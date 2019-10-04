@@ -4,7 +4,6 @@ import AddContactPage from '../AddContactPage/AddContactPage';
 import ContactsPage from '../ContactsPage/ContactsPage'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from '../NavBar/NavBar'
-import AddressBook from '../AddressBook/AddressBook'
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         <Route path="/add-contact" render={AddContactPage}/>    
         <Route render={ContactsPage}/>    
       </Switch>
-      <AddressBook />
     </Router>
 </>
   );

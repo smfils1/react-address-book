@@ -4,13 +4,13 @@ import { FaRegTrashAlt } from "react-icons/fa";
 import Contact from "../Contact/Contact";
 import { v4 } from "uuid";
 
-const ContactList = ({ contacts }) => {
+const ContactList = ({ contacts, className }) => {
     const createContacts = () =>
         contacts.map(contact => (
             <Contact {...contact} width="25rem" key={v4()} />
         ));
 
-    return <>{createContacts()}</>;
+    return <div  className={className}>{createContacts()}</div>;
 };
 
 export default ContactList;

@@ -1,10 +1,16 @@
 import React from 'react'
+import Header from '../Header/Header'
+import AddressBook from '../AddressBook/AddressBook'
+
 
 const ContactsPage = () => 
-    (
+    (   
         <div>
-           <h1>Contacts</h1> 
-        </div>
+        <Header>
+           Contacts
+        </Header>
+        <AddressBook />
+</div>
     )
 
 
