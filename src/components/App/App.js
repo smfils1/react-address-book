@@ -15,6 +15,7 @@ function App() {
         <Route path="/add-contact" render={AddContactPage}/>    
         <Route render={ContactsPage}/>    
       </Switch>
+
     </Router>
 </>
   );
