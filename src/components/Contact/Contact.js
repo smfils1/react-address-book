@@ -6,8 +6,8 @@ import Button from "react-bootstrap/Button";
 import defaultImg from "../../assets/default-img.png";
 import { FaRegTrashAlt } from "react-icons/fa";
 
-const Contact = ({ FirstName, LastName, Birthday, Telephone, width} ) => (
-    <Card style={{ width}}>
+const Contact = ({ FirstName, LastName, Birthday, Telephone, width }) => (
+    <Card style={{ width }}>
         <Row className="no-gutters">
             <Col xs={3}>
                 <Card.Img src={defaultImg} />

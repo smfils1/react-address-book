@@ -10,7 +10,7 @@ const ContactList = ({ contacts, className }) => {
             <Contact {...contact} width="25rem" key={v4()} />
         ));
 
-    return <div  className={className}>{createContacts()}</div>;
+    return <div className={className}>{createContacts()}</div>;
 };
 
 export default ContactList;

@@ -1,17 +1,15 @@
-import React from 'react'
-import Header from '../Header/Header'
-import AddressBook from '../AddressBook/AddressBook'
+import React from "react";
+import Header from "../Header/Header";
+import AddressBook from "../AddressBook/AddressBook";
 
+const ContactsPage = ({ contacts, searchChangeHandler }) => (
+    <div>
+        <Header>Contacts</Header>
+        <AddressBook
+            contacts={contacts}
+            searchChangeHandler={searchChangeHandler}
+        />
+    </div>
+);
 
-const ContactsPage = () => 
-    (   
-        <div>
-        <Header>
-           Contacts
-        </Header>
-        <AddressBook />
-</div>
-    )
-
-
-export default ContactsPage
+export default ContactsPage;
