@@ -7,6 +7,11 @@ import NavBar from "../NavBar/NavBar";
 
 class App extends Component {
     state = {
+        submitNewData: false,
+        newFirstName: "",
+        newLastName: "",
+        newPhone: "",
+        newBirthDate: "",
         search: "",
         contacts: [
             {
@@ -61,11 +66,53 @@ class App extends Component {
         return contacts.filter(contact => test(search, contact));
     };
 
+    submitHandler = event => {
+        const submitNewData = window.confirm(
+            "Are you sure you add new contact?"
+        );
+        if (!submitNewData) {
+            event.preventDefault();
+            this.setState({ submitNewData });
+        } else {
+            this.setState(prevState => {
+                const newContact = {
+                    FirstName: prevState.newFirstName,
+                    LastName: prevState.newLastName,
+                    Telephone: prevState.newPhone,
+                    Birthday: prevState.newBirthDate
+                };
+                const contacts = [...prevState.contacts];
+                contacts.push(newContact);
+                return { submitNewData, contacts: [...contacts] };
+            });
+        }
+    };
+
+    inputChangeHandler = (event, stateToChange) => {
+        const input = event.target.value;
+        const update = {};
+        update[stateToChange] = input;
+        this.setState(update);
+    };
+
     searchChangeHandler = event => {
-        const search = event.target.value;
-        this.setState({
-            search
-        });
+        this.inputChangeHandler(event, "search");
+    };
+
+    fnameChangeHandler = event => {
+        this.inputChangeHandler(event, "newFirstName");
+    };
+
+    lnameChangeHandler = event => {
+        this.inputChangeHandler(event, "newLastName");
+    };
+
+    phoneChangeHandler = event => {
+        this.inputChangeHandler(event, "newPhone");
+    };
+
+    birthDateChangeHandler = event => {
+        this.inputChangeHandler(event, "newBirthDate");
     };
     render() {
         return (
@@ -92,7 +139,13 @@ class App extends Component {
                             render={routeProps => (
                                 <AddContactPage
                                     {...routeProps}
-                                    contacts={this.state.contacts}
+                                    submitHandler={this.submitHandler}
+                                    fnameChangeHandler={this.fnameChangeHandler}
+                                    lnameChangeHandler={this.lnameChangeHandler}
+                                    phoneChangeHandler={this.phoneChangeHandler}
+                                    birthDateChangeHandler={
+                                        this.birthDateChangeHandler
+                                    }
                                 />
                             )}
                         />
