@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/react_address_book/static/css/main.1f793c1a.chunk.css",
-    "main.js": "/react_address_book/static/js/main.2ef2b0db.chunk.js",
-    "main.js.map": "/react_address_book/static/js/main.2ef2b0db.chunk.js.map",
-    "runtime-main.js": "/react_address_book/static/js/runtime-main.b150d28f.js",
-    "runtime-main.js.map": "/react_address_book/static/js/runtime-main.b150d28f.js.map",
-    "static/css/2.0624914a.chunk.css": "/react_address_book/static/css/2.0624914a.chunk.css",
-    "static/js/2.16ef68de.chunk.js": "/react_address_book/static/js/2.16ef68de.chunk.js",
-    "static/js/2.16ef68de.chunk.js.map": "/react_address_book/static/js/2.16ef68de.chunk.js.map",
-    "index.html": "/react_address_book/index.html",
-    "precache-manifest.4c2daf99e48d992213f2e75c2c51bba3.js": "/react_address_book/precache-manifest.4c2daf99e48d992213f2e75c2c51bba3.js",
-    "service-worker.js": "/react_address_book/service-worker.js",
-    "static/css/2.0624914a.chunk.css.map": "/react_address_book/static/css/2.0624914a.chunk.css.map",
-    "static/css/main.1f793c1a.chunk.css.map": "/react_address_book/static/css/main.1f793c1a.chunk.css.map",
-    "static/media/default-img.png": "/react_address_book/static/media/default-img.b6681619.png"
+    "main.css": "/react-address-book/static/css/main.1f793c1a.chunk.css",
+    "main.js": "/react-address-book/static/js/main.b358a7d9.chunk.js",
+    "main.js.map": "/react-address-book/static/js/main.b358a7d9.chunk.js.map",
+    "runtime-main.js": "/react-address-book/static/js/runtime-main.6ca75b15.js",
+    "runtime-main.js.map": "/react-address-book/static/js/runtime-main.6ca75b15.js.map",
+    "static/css/2.0624914a.chunk.css": "/react-address-book/static/css/2.0624914a.chunk.css",
+    "static/js/2.16ef68de.chunk.js": "/react-address-book/static/js/2.16ef68de.chunk.js",
+    "static/js/2.16ef68de.chunk.js.map": "/react-address-book/static/js/2.16ef68de.chunk.js.map",
+    "index.html": "/react-address-book/index.html",
+    "precache-manifest.759bd5c6294441717e140c830d359be5.js": "/react-address-book/precache-manifest.759bd5c6294441717e140c830d359be5.js",
+    "service-worker.js": "/react-address-book/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/react-address-book/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.1f793c1a.chunk.css.map": "/react-address-book/static/css/main.1f793c1a.chunk.css.map",
+    "static/media/default-img.png": "/react-address-book/static/media/default-img.b6681619.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b150d28f.js",
+    "static/js/runtime-main.6ca75b15.js",
     "static/css/2.0624914a.chunk.css",
     "static/js/2.16ef68de.chunk.js",
     "static/css/main.1f793c1a.chunk.css",
-    "static/js/main.2ef2b0db.chunk.js"
+    "static/js/main.b358a7d9.chunk.js"
   ]
 }
