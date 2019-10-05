@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "64b40ab9861d99f9e102780ca1dace9a",
+    "revision": "aa2a3819318247db528cdbce0bafc159",
     "url": "/react-address-book/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-address-book/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "6071e34d8de8d10a62d5",
+    "revision": "0478a515c7411bf466f6",
     "url": "/react-address-book/static/css/main.1f793c1a.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-address-book/static/js/2.16ef68de.chunk.js"
   },
   {
-    "revision": "6071e34d8de8d10a62d5",
-    "url": "/react-address-book/static/js/main.426c8ad5.chunk.js"
+    "revision": "0478a515c7411bf466f6",
+    "url": "/react-address-book/static/js/main.f1148ee2.chunk.js"
   },
   {
     "revision": "d4c5ec959bb06ea60b4b",
