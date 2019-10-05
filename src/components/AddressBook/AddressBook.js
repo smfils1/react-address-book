@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import ContactList from "../ContactList/ContactList";
 import Container from "react-bootstrap/Container";
 import SearchBox from "../SearchBox/SearchBox";

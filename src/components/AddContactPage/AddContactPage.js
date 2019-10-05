@@ -14,7 +14,7 @@ const AddContactPage = ({
     <Container>
         <Header>Add Contact</Header>
         <NewContactForm
-            className="m-auto w-sm-75"
+            className="m-auto py-4 w-sm-75"
             submitHandler={submitHandler}
             fnameChangeHandler={fnameChangeHandler}
             lnameChangeHandler={lnameChangeHandler}

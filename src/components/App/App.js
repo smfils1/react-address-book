@@ -53,6 +53,7 @@ class App extends Component {
         ]
     };
 
+
     getUniqueId = ({ FirstName, LastName, Birthday, Telephone }) => {
         return `${FirstName}${LastName}${Telephone}${Birthday}`;
     };
@@ -138,6 +139,7 @@ class App extends Component {
     birthDateChangeHandler = event => {
         this.inputChangeHandler(event, "newBirthDate");
     };
+
     render() {
         return (
             <>

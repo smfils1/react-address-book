@@ -1,0 +1,21 @@
+.logoText {
+    font-size: 1.5em ;
+}
+
+.logo {
+    font-size: 1.5em ;
+}
+
+.link {
+    font-size:1.2em;
+}
+
+@media only screen and (min-width: 786px) {
+    .logoText {
+        font-size: 1.7em ;
+    }
+    
+    .logo {
+        font-size: 1.7em ;
+    }
+  }
