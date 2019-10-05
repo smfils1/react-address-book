@@ -6,7 +6,14 @@ import Button from "react-bootstrap/Button";
 import defaultImg from "../../assets/default-img.png";
 import { FaRegTrashAlt } from "react-icons/fa";
 
-const Contact = ({ FirstName, LastName, Birthday, Telephone, width }) => (
+const Contact = ({
+    FirstName,
+    LastName,
+    Birthday,
+    Telephone,
+    width,
+    deleteHandler
+}) => (
     <Card style={{ width }}>
         <Row className="no-gutters">
             <Col xs={3}>
@@ -22,7 +29,11 @@ const Contact = ({ FirstName, LastName, Birthday, Telephone, width }) => (
                 </div>
             </Col>
             <Col xs={2} className="mt-auto mb-2 text-center">
-                <Button variant="danger">
+                <Button
+                    value={`${FirstName}${LastName}${Telephone}${Birthday}`}
+                    onClick={deleteHandler}
+                    variant="danger"
+                >
                     <FaRegTrashAlt />
                 </Button>
             </Col>

@@ -53,6 +53,10 @@ class App extends Component {
         ]
     };
 
+    getUniqueId = ({ FirstName, LastName, Birthday, Telephone }) => {
+        return `${FirstName}${LastName}${Telephone}${Birthday}`;
+    };
+
     filteredContacts = () => {
         const { search, contacts } = this.state;
         const test = (search, infoObject) => {
@@ -66,9 +70,29 @@ class App extends Component {
         return contacts.filter(contact => test(search, contact));
     };
 
+    deleteHandler = event => {
+        const deleteBool = window.confirm(
+            "Are you sure you want to delete contact?"
+        );
+
+        if (deleteBool) {
+            const id = event.currentTarget.value;
+            this.setState(prevState => {
+                let contacts = [...prevState.contacts];
+                for (let i = 0; i < contacts.length; i++) {
+                    if (id === this.getUniqueId(contacts[i])) {
+                        contacts.splice(i, 1);
+                        break;
+                    }
+                }
+                return { contacts };
+            });
+        }
+    };
+
     submitHandler = event => {
         const submitNewData = window.confirm(
-            "Are you sure you add new contact?"
+            "Are you sure you want to add new contact?"
         );
         if (!submitNewData) {
             event.preventDefault();
@@ -130,6 +154,7 @@ class App extends Component {
                                     searchChangeHandler={
                                         this.searchChangeHandler
                                     }
+                                    deleteHandler={this.deleteHandler}
                                 />
                             )}
                         />
