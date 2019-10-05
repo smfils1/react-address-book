@@ -176,7 +176,18 @@ class App extends Component {
                                 />
                             )}
                         />
-                        <Route render={ContactsPage} />
+                        <Route 
+                            path="*"
+                            render={routeProps => (
+                                <ContactsPage
+                                    {...routeProps}
+                                    contacts={this.filteredContacts()}
+                                    searchChangeHandler={
+                                        this.searchChangeHandler
+                                    }
+                                    deleteHandler={this.deleteHandler}
+                                />
+                            )}/>
                     </Switch>
                 </Router>
             </>
