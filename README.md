@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) & [React Bootstrap](https://react-bootstrap.github.io/)
+
+[Live Demo](https://smfils1.github.io/react-address-book/)
 
 ## Available Scripts
 
